@@ -1,0 +1,184 @@
+@import '../../styles/default.scss';
+
+.box {
+    width: calc(100% - 100px);
+    padding: 50px;
+    position: relative;
+
+    @media screen and (max-width: $tablet) {
+        width: calc(100% - 40px);
+        padding: 50px 20px;
+    }
+
+    .design {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 60vh solid $ice;
+        border-right: 100vw solid transparent;
+        z-index: -1;
+    }
+
+    & h3 {
+        z-index: 2;
+        font-size: 80px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 60px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 30px;
+        }
+    }
+
+    .artirstContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        @media screen and (max-width: $tablet-max) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .artistBox {
+            width: 600px;
+            height: 850px;
+            margin-bottom: 50px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: $tablet-max) {
+                margin: 50px 0;
+            }
+
+            @media screen and (max-width: $mobile) {
+                margin: 30px 0;
+                margin-top: 0;
+                width: 100%;
+                height: 600px;
+            }
+
+            .artistGB {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                background-size: cover;
+                filter: blur(3px);
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                background-position: center;
+                margin-bottom: 20px;
+            }
+
+            .artistImage {
+                width: 500px;
+                height: 790px;
+
+                @media screen and (max-width: $mobile) {
+                    width: 80%;
+                    height: 550px;
+                }
+
+                background-size: cover;
+                border-radius: 20px;
+                border: 4px solid rgba($ice, 0.3);
+                z-index: 1;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .infoBox {
+                position: absolute;
+                bottom: -5px;
+                width: calc(105% - 30px);
+                padding: 20px 15px;
+                left: -2.5%;
+                height: auto;
+                border-radius: 20px;
+                display: flex;
+                background-color: $ice;
+                box-shadow: 0 0 30px rgba($dark, 0.3);
+                z-index: 2;
+                align-items: center;
+                flex-direction: column;
+
+                & p {
+                    font-size: 18px;
+                    color: $dark;
+                    padding: 10px;
+                    line-height: 24px;
+
+
+                    @media screen and (max-width: $mobile) {
+                        padding: 5px 10px;
+                        font-size: 14px;
+                    }
+                }
+
+                .basicInfo{
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    max-width: 70%;
+
+                    .name {
+                        color: $main-rose;
+                        font-size: 30px;
+                        font-weight: bold;
+                        overflow: hidden;
+                        white-space: pre-wrap;
+                        text-overflow: ellipsis;
+
+                        @media screen and (max-width: $mobile) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .experience {
+                        color: lighten($dark, 30);
+                        font-size: 12px;
+                    }
+                }
+
+                .roleBox {
+                    max-width: 30%;
+                    padding: 5px;
+                    display: flex;
+                    align-items: center;
+                    background-color: $main-rose;
+                    position: absolute;
+                    right: 0;
+                    border-radius: 20px;
+                    height: 40px;
+                    box-shadow: -8px 0px 15px rgba($dark, 0.1);
+
+                    & span {
+                        font-size: 14px;
+                        color: $ice;
+                        font-weight: bold;
+                        text-shadow: 0px 0px 15px rgba($dark, 0.3);
+                    }
+                }
+            }
+        }
+
+    }
+}

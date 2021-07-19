@@ -1,0 +1,40 @@
+@import '../../styles/default.scss';
+
+.box {
+    width: calc(100% - 400px);
+    display: flex;
+    background-image: url('../../assets/clientsDesktop.png');
+    background-size: contain;
+    background-position-x: center;
+    height: 400px;
+    box-shadow: inset 0px 0px 1200px black;
+    padding: 50px 200px;
+    justify-content: center;
+    align-items: center;
+    color: $ice;
+    text-align: center;
+    text-shadow: 0px 0px 3px $dark;
+    font-size: 32px;
+
+    @media screen and (max-width: $tablet-max) {
+        font-size: 26px;
+        width: calc(100% - 200px);
+        padding: 50px 100px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        background-image: url('../../assets/clientsMobile.png');
+        height: 1024px;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    @media screen and (max-width: $tablet) {
+        background-image: url('../../assets/clientsMobile.png');
+        height: 503px;
+        font-size: 18px;
+        line-height: 22px;
+        width: calc(100% - 80px);
+        padding: 30px 40px;
+    }
+
+}

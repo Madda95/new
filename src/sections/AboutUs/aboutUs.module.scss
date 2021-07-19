@@ -1,0 +1,85 @@
+@import '../../styles/default.scss';
+
+.box {
+    min-height: 100vh;
+    width: calc(100% - 100px);
+    padding: 50px;
+    background: darken($dark, 10);
+    transition: 0.3s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $ice;
+
+    @media screen and (max-width: $tablet-max) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $mobile) {
+        padding: 50px 24px;
+        width: calc(100% - 48px);
+    }
+    
+    .team {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: $tablet-max) {
+            width: 100%;
+        }
+        
+
+        & img {
+            width: 100%;
+            padding: 20px;
+            opacity: 0;
+            transition: 0.4s ease-in;
+
+            @media screen and (max-width: $tablet-max) {
+                width: 75%;
+            }
+            
+        }
+    }
+
+    .titleContainer {
+        width: 60%;
+
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+        }
+
+        & h3 {
+            font-size: 80px;
+            padding-bottom: 50px;
+            opacity: 0;
+            color: $main-rose;
+            @media screen and (max-width: $tablet) {
+                font-size: 60px;
+            }
+            @media screen and (max-width: $mobile) {
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+
+        }
+
+        & p {
+            font-size: 30px;
+            padding-bottom: 50px;
+            line-height: 50px;
+            opacity: 0;
+            transition: 0.4s ease-in;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 18px;
+                line-height: 32px;
+                padding-bottom: 24px;
+            }
+        }
+    }
+
+}

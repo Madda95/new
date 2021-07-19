@@ -1,0 +1,90 @@
+@import '../../styles/default.scss';
+
+.box {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(to top, $main-rose, $lite-rose);
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+
+    @media screen and (max-width: $tablet-max) {
+        height: 600px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        height: 400px;
+    }
+
+    .followIntent {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 270px;
+        height: 380px;
+        border: 10px solid $ice;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-size: 8rem;
+        cursor: pointer;
+        z-index: 2;
+
+        @media screen and (max-width: $mobile) {
+            width: 210px;
+            height: 320px;
+        }
+
+        .followText {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            font-size: 6rem;
+            color: white;
+            text-shadow: 0 0 20px rgba($dark, 0.2);
+            transition: 0.1s cubic-bezier(.44,.7,.67,1.04);
+
+            @media screen and (max-width: $mobile) {
+                font-size: 3.5rem;
+            }
+
+
+            &:hover {
+                font-size: 8rem;
+                cursor: pointer;
+
+                @media screen and (max-width: $tablet) {
+                    font-size: 5rem;
+                }
+                @media screen and (max-width: $mobile) {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    .instagramCarousel {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        z-index: 0;
+
+        .instagramBox {
+            min-width: 350px;
+            height: 350px;
+            border-radius: 3px;
+            background-color: $ice;
+            float: left;
+            display: inline-block;
+            margin: 0 30px;
+
+            @media screen and (max-width: $mobile) {
+                min-width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}

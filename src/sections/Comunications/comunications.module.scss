@@ -1,0 +1,44 @@
+@import '../../styles/default.scss';
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, $main-rose, $lite-rose);
+
+    & h3 {
+        z-index: 2;
+        font-size: 80px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 60px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 30px;
+        }
+    }
+
+    .comunicationList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .bunner {
+            width: 100%;
+            height: 660px;
+            background-size: cover;
+            background-position: center;
+
+            .container {
+                width: 100%;
+                height: 100%;
+                transition: 0.3 ease-in;
+                background: linear-gradient(to right, rgba($dark, 0.6), rgba($dark, 0.2));
+            }
+        }
+    }
+    
+
+}

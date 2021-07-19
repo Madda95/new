@@ -1,0 +1,185 @@
+@import '../../styles/default.scss';
+
+.box {
+    background: darken($dark,10);
+    background-image: url('../../assets/pattern2.png');
+    background-repeat: repeat;
+    position: relative;
+
+    .reviewsContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+
+        @media screen and (max-width: $mobile) {
+            flex-direction: column;
+        }
+
+        img {
+            width: 40%;
+            object-position: bottom;
+            margin-top: auto;
+        }
+
+        .textCont {
+            width: 60%;
+            font-size: 80px;
+            text-align: center;
+            color: $ice;
+            font-weight: 900;
+            padding: 50px;
+            text-shadow: 0px 0px 20px #0000002e;
+
+                @media screen and (max-width: $tablet-max) {
+                    width: 85%;
+                    font-size: 60px;
+                }
+
+                @media screen and (max-width: $mobile) {
+                    font-size: 30px;
+                    padding: 50px 0;
+                }
+
+            .reviewsCard {
+                width: 100%;
+                height: 280px;
+                background-color: $ice;
+                border-radius: 5px;
+                margin-top: 50px;
+                cursor: default;
+                transition: 0.4s ease-in;
+                padding: 24px 40px;
+                font-size: $paragraph-text-size;
+                color: $ice;
+                font-weight: 500;
+                text-align: left;
+                display: flex;
+                align-items: center;
+
+                @media screen and (max-width: $tablet-max) {
+                    width: auto;
+                }
+
+                @media screen and (max-width: $mobile) {
+                    flex-direction: column;
+                    height: auto;
+                    padding: 40px;
+                    padding-bottom: 15px;
+                }
+
+                .clientsCardContainer {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    width: 200px;
+
+                    .designBox {
+                        width: 80%;
+                        height: 110%;
+                        border-radius: 5px;
+                        z-index: 1;
+                        background: linear-gradient(45deg, $lite-rose,$main-rose);
+                        box-shadow: 0px 0px 30px rgba($dark, 0.3);  
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    .clientsCard {
+                        width: 180px;
+                        height: 250px;
+                        background-color: $ice;
+                        box-shadow: 0 0 20px rgba($dark, 0.3);
+                        border-radius: 5px;
+                        position: relative;
+                        z-index: 2;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .imgCont {
+                            width: 160px;
+                            height: 160px;
+                            border-radius: 15px;
+                            box-shadow: rgba($dark, 0.3);
+                            margin: 0 auto;
+
+                            & img {
+                                object-fit: cover;
+                                border-radius: 5px;
+                                width: 160px;
+                                height: 160px;
+                            }
+
+                        }
+
+                        .infoContainer {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+
+                            .clientsName {
+                                margin-top: auto;
+                                font-size: $title-text-size;
+                                color: $dark;
+                                margin-bottom: 35px;
+                            }
+                        }
+                        
+                    }
+                }
+                .paragrapCont {
+                    width: 100%;
+                    padding: 20px 30px;
+                    color: $dark;
+                    line-height: 35px;
+
+                    @media screen and (max-width: $mobile) {
+                        padding: 12px;
+                        margin-top: 40px;
+                    }
+
+                    & p {
+                        font-size: 15px;
+                        padding: 0 30px;
+
+                        @media screen and (max-width: $tablet-max) {
+                            font-size: 16px;
+                            padding: 0 0 0 30px;
+                            line-height: 26px;
+                        }
+
+                        @media screen and (max-width: $mobile) {
+                            padding: 0;
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    }
+                    & div {
+                        font-size: 100px;
+                        line-height: 45px;
+                        text-shadow: 0px 0px 30px rgba($dark, 0.3);
+
+
+                        @media screen and (max-width: $tablet-max) {
+                            font-size: 70px;
+                        }
+
+                        @media screen and (max-width: $mobile) {
+                            display: none;
+                        }
+                    }
+
+                    .lastApix {
+                        text-align: right;
+                    }
+                }
+            }   
+        }
+    }
+}
