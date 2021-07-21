@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './footer.module.scss';
+import bg from '../../assets/team.png';
 
 const Footer = () => {
-    return <div className={styles.box}>
+    return <div className={styles.box} style={{background: 'url(' + bg + ')', backgroundPosition: 'center', backgroundSize: 'cover'}}>
         <div className={styles.boxInfo}>
             <div className={styles.titleCont}>
                 <h3>CONTATTI</h3>

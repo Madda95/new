@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './clients.module.scss';
 import reviews from './data';
+import bg from '../../assets/pattern2.png';
 
 const Clients = () => {
-    return <div className={styles.box}>
+    return <div className={styles.box} style={{backgroundImage: 'url(' + bg + ')', backgroundRepeat: 'repeat'}}>
         <div className={styles.reviewsContainer}>
             <div className={styles.textCont}>
                 <span className={styles.testEmp}>DICONO DI NOI</span>

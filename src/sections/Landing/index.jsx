@@ -3,10 +3,12 @@ import styles from './landing.module.scss';
 import heroImage from '../../assets/new-life-parrucchiere-ronchi-main.png';
 import instagram from '../../assets/icons/instagram.png';
 import facebook from '../../assets/icons/facebook.png';
+import bg from '../../assets/background.png';
+import phone from '../../assets/icons/telefono.png';
 
 const Landing = () => {
     return (
-        <div className={styles.box}>
+        <div className={styles.box} style={{backgroundImage: 'url(' + bg + ')', backgroundSize:'cover'}}>
             <div className={styles.mainWrapper}>
                 <div className={styles.socialWrapper}>
                     <a href="https://www.instagram.com/newl.ife782/" rel="noreferrer" target='_blank'>
@@ -24,7 +26,7 @@ const Landing = () => {
                 <div className={styles.bigSquare}></div>
             </div>
             <a href={'tel:+390481476067'}>
-                <div className={styles.call}></div>
+                <div className={styles.call} style={{backgroundImage: 'url(' + phone + ')', backgroundSize: '50%', backgroundPosition: 'center'}}></div>
             </a>
         </div>
     )
