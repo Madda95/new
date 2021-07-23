@@ -1,4 +1,4 @@
-import simo from '../../assets/parrucchiera_simonetta_maccioni.jpeg';
+import simo from '../../assets/parrucchiera_simonetta_maccioni.png';
 import nunzia from '../../assets/nunzia.png';
 import federica from '../../assets/federica.png';
 
