@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
             <div className={styles.hours}>
                 <Hour day={'Lunedì'} time={'Chiuso'}/>
-                <Hour day={'Martedì'} time={'08:30 - 17:00'} />
+                <Hour day={'Martedì'} time={'09:00 - 17:00'} />
                 <Hour day={'Mercoledì'} time={'14:00 - 20:00'}/>
                 <Hour day={'Giovedì'} time={'09:00 - 17:00'}/>
                 <Hour day={'Venerdì'} time={'08:30 - 18:30'}/>

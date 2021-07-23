@@ -7,7 +7,7 @@ import federica from '../../assets/federica.png';
 export default [
     {
         img: simo,
-        name: 'SIMONETTA',
+        name: 'SIMONA',
         alt: 'Simona parrucchiera',
         description: 'Fondatrice e co-proprietaria di New Life. Coordina l’attività insieme a Nunzia. Crea acconciature fin dall’età di 15 anni e questo le permette di offrire al cliente un servizio a 360°. Schiariture, colorazioni ed in generale i biondi sono il suo punto forte.'
     },
