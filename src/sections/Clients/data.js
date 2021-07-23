@@ -2,6 +2,7 @@ import daniel from '../../assets/daniel.png';
 import defaultImage from '../../assets/saloon.jpg';
 import paolaV from '../../assets/visovichpaola.jpeg';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
         image: daniel,
@@ -23,7 +24,7 @@ export default [
     },
     {
         image: defaultImage,
-        name: '',
+        name: 'SIGN',
         lastname: 'MIANI',
         review: 'Ragazze all\' altezza di consigliarti sempre il meglio per i tuoi capelli! Meches sempre perfette come il taglio, grazie Nunzia e Simona!'
     },
@@ -31,6 +32,6 @@ export default [
         image: defaultImage,
         name: 'ELENA',
         lastname: 'GIANNELLO',
-        review: 'L\' accoglienza con un sorriso è il primo elemento che rendono sleciale New Life. Simona e Nunzia con professionalità e grande disponibilità mi hanno sempre consigliata nel segliere accuratamente il taglio adatto a me. Nulla da dire sui prodotti sono veramente TOP! '
+        review: 'L\' accoglienza con un sorriso è il primo elemento che rendono speciale New Life. Simona e Nunzia con professionalità e grande disponibilità mi hanno sempre consigliata nel segliere accuratamente il taglio adatto a me. Nulla da dire sui prodotti sono veramente TOP! '
     },
 ]
