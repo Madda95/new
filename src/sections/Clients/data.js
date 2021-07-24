@@ -24,7 +24,7 @@ export default [
     },
     {
         image: defaultImage,
-        name: 'SIGN',
+        name: 'IRINA',
         lastname: 'MIANI',
         review: 'Ragazze all\' altezza di consigliarti sempre il meglio per i tuoi capelli! Meches sempre perfette come il taglio, grazie Nunzia e Simona!'
     },
