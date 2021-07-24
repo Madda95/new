@@ -11,7 +11,7 @@ const Footer = () => {
             </div>
             <div className={styles.mainInfo}>
                 <a className={styles.street} href={'https://goo.gl/maps/7xtzJsZEFrJrqwp28'}>
-                    Via Parini 12 <br/> Ronchi dei Legionari (GO) <br/> Italy
+                    Piazza Furlan, 7 <br /> Ronchi dei Legionari
                 </a>
                 <div className={styles.phone}>
                     <a href='tel: +390481476067'>+39 0481 476067</a>
