@@ -8,7 +8,7 @@ const Artists = () => {
         <div className={styles.design}></div>
         <h3>LE PARUCCHIERE</h3>
         <div className={styles.artirstContainer}>
-        {data.map(item => <ArtistCard {...item} />)}        
+        {data.map(item => <ArtistCard {...item} key={item.name} />)}        
         </div>
     </div>
 }
