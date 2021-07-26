@@ -7,7 +7,7 @@ const Footer = () => {
         <div className={styles.boxInfo}>
             <div className={styles.titleCont}>
                 <h3>CONTATTI</h3>
-                <div className={styles.logo} role='image' alt='New life ronchi logo'></div>
+                <div className={styles.logo} role='img' alt='New life ronchi logo'></div>
             </div>
             <div className={styles.mainInfo}>
                 <a className={styles.street} href={'https://goo.gl/maps/7xtzJsZEFrJrqwp28'}>

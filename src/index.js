@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-window.React = React;
 import App from './App';
+window.React = React;
 
 render(
   <React.StrictMode>
